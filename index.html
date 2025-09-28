@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saketh Polavarapu — Portfolio</title>
+  <meta name="description" content="Projects, skills, and contact information for Saketh Polavarapu." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h1>Hi, I’m Saketh</h1>
+      <p>This is my portfolio site. I’ll add a proper About, real projects, skills, and contact shortly.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <article class="card">
+        <h3>Project One</h3>
+        <p>Short description + tech stack. <a href="#">Repo</a></p>
+      </article>
+      <article class="card">
+        <h3>Project Two</h3>
+        <p>Short description + tech stack. <a href="#">Repo</a></p>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="tags">
+        <li>Python</li><li>HTML</li><li>CSS</li><li>Git/GitHub</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:saketh@example.com">saketh@example.com</a> ·
+         LinkedIn: <a href="https://linkedin.com/in/your-handle">your-handle</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">© <span id="y"></span> Saketh Polavarapu</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
