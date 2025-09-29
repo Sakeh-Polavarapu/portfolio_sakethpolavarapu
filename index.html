@@ -17,63 +17,49 @@
     </nav>
   </header>
 
-<section id="about">
-  <h1>Hi, I’m Saketh</h1>
-  <p>My name is <strong>Saketh Polavarapu</strong>, and I am pursuing an <strong>M.S. in Artificial Intelligence</strong> at the <strong>University of South Florida</strong>. I’m passionate about applying AI and machine learning to solve real-world challenges. With some experience in <strong>data science, automation, and cloud computing</strong>, I’ve helped in building solutions that improve efficiency, accuracy, and decision-making.</p>
-  <p>I enjoy projects that bridge the gap between <strong>theory and practical impact</strong>, from predictive modeling to intelligent automation. My interests include <strong>deep learning, federated learning, and scalable cloud architectures</strong>, and I aim to contribute approaches that make technology more accessible and reliable.</p>
-</section>
+  <main class="container">
+    <!-- About -->
+    <section id="about">
+      <h1>Hi, I’m Saketh</h1>
+      <p>My name is <strong>Saketh Polavarapu</strong>, and I am pursuing an <strong>M.S. in Artificial Intelligence</strong> at the <strong>University of South Florida</strong>. I’m passionate about applying AI and machine learning to solve real-world challenges. With hands-on experience in <strong>data science, automation, and cloud computing</strong>, I’ve built solutions that improve efficiency, accuracy, and decision-making.</p>
+      <p>I enjoy projects that bridge the gap between <strong>theory and practical impact</strong>, from predictive modeling to intelligent automation. My interests include <strong>deep learning, federated learning, and scalable cloud architectures</strong>, and I aim to contribute approaches that make technology more accessible and reliable.</p>
+    </section>
 
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
 
-  <section id="projects">
-  <h2>Projects</h2>
+      <!-- Project: AV-HuBERT -->
+      <article class="card">
+        <h3>Audioless Video → Speech (AV-HuBERT)</h3>
+        <p>
+          Converts lip movements to speech via an AV-HuBERT pipeline: mouth ROI extraction, lip-reading,
+          and Text-to-Speech with <strong>SpeechT5</strong>. Streamlit UI for upload and playback.
+        </p>
+        <p><em>Tech:</em> PyTorch · transformers · fairseq · OpenCV · dlib · Streamlit</p>
+        <p>
+          <a href="https://github.com/Sakeh-Polavarapu/audio-less-video-to-speech/tree/main" target="_blank" rel="noopener">Repo</a>
+          · <a href="https://doi.org/10.1007/978-3-031-69201-7_32" target="_blank" rel="noopener">Paper (DOI)</a>
+        </p>
+      </article>
 
-  <!-- Project 1 -->
-  <article class="card">
-    <h3>Federated Pneumonia Detection (Chest X-rays)</h3>
-    <p>
-      Privacy-preserving classification that simulates two hospital clients and a central server using
-      <strong>Flower</strong>. Fine-tuned <strong>ResNet50</strong> with Differential Privacy (tracked ε),
-      packaged in Docker for reproducible runs.
-    </p>
-    <p><em>Tech:</em> PyTorch · Flower · DP-SGD · Docker</p>
-    <p>
-      <a href="https://github.com/YOUR_USERNAME/REPO_NAME_1" target="_blank" rel="noopener">Repo</a>
-      · <a href="#" target="_blank" rel="noopener">Report/Slides</a>
-    </p>
-  </article>
+      <!-- Project: Federated Pneumonia Detection -->
+      <article class="card">
+        <h3>Federated Pneumonia Detection (Chest X-rays)</h3>
+        <p>
+          Privacy-preserving image classification simulating multiple hospital clients with a central server using
+          <strong>Flower</strong>. Fine-tuned <strong>ResNet50</strong> and integrated <strong>Differential Privacy</strong> (tracked ε).
+          Containerized runs for reproducibility.
+        </p>
+        <p><em>Tech:</em> PyTorch · Flower · DP-SGD · Docker</p>
+        <p>
+          <a href="https://github.com/Sakeh-Polavarapu/federated-learning-pneumonia-detection-Flowers/tree/main" target="_blank" rel="noopener">Repo</a>
+        </p>
+      </article>
+    </section>
 
-  <!-- Project 2 -->
-  <article class="card">
-    <h3>Transfer Learning on Oxford Flowers-102</h3>
-    <p>
-      Fine-tuned <strong>ResNet-18</strong> with <strong>Weights &amp; Biases</strong> sweeps. Logged confusion
-      matrix, per-class F1, and training curves; achieved strong top-1 accuracy with modest compute.
-    </p>
-    <p><em>Tech:</em> PyTorch · W&amp;B · Transfer Learning</p>
-    <p>
-      <a href="https://github.com/YOUR_USERNAME/REPO_NAME_2" target="_blank" rel="noopener">Repo</a>
-      · <a href="#" target="_blank" rel="noopener">Notebook</a>
-    </p>
-  </article>
-
-</section>
-
-
+    <!-- Skills -->
     <section id="skills">
       <h2>Skills</h2>
       <ul class="tags">
-        <li>Python</li><li>HTML</li><li>CSS</li><li>Git/GitHub</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:saketh@example.com">saketh@example.com</a> ·
-         LinkedIn: <a href="https://linkedin.com/in/your-handle">your-handle</a></p>
-    </section>
-  </main>
-
-  <footer class="site-footer">© <span id="y"></span> Saketh Polavarapu</footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-</body>
-</html>
+        <li>Python</li><li>PyTorch</li><li>Streamlit</
