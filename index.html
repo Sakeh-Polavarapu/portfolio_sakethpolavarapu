@@ -19,16 +19,6 @@
   </header>
 
   <main class="container">
-    <!-- HERO (image + short tagline) -->
-    <section class="hero">
-      <div class="hero-text">
-        <p>AI &amp; ML grad student focused on practical impact — from lip-reading to federated learning.</p>
-      </div>
-      <div class="hero-media">
-        <img src="assets/ai-hero.jpg" alt="Abstract AI/tech visualization" width="960" height="600" loading="eager" />
-      </div>
-    </section>
-
     <!-- About -->
     <section id="about">
       <h1>Hi, I’m Saketh</h1>
@@ -42,11 +32,10 @@
 
       <!-- Project: AV-HuBERT -->
       <article class="card">
-        <figure class="project-media">
-          <span class="gif-badge">GIF</span>
-          <img src="assets/avhubert.png" alt="AV-HuBERT demo preview" width="1280" height="720" loading="lazy" />
-        </figure>
-        <h3>Audioless Video → Speech (AV-HuBERT)</h3>
+        <h3 class="title">
+          <img class="icon" src="assets/avhubert.png" alt="" />
+          Audioless Video → Speech (AV-HuBERT)
+        </h3>
         <p>
           Converts lip movements to speech via an AV-HuBERT pipeline: mouth ROI extraction, lip-reading,
           and Text-to-Speech with <strong>SpeechT5</strong>. Streamlit UI for upload and playback.
@@ -60,10 +49,10 @@
 
       <!-- Project: Federated Pneumonia Detection -->
       <article class="card">
-        <figure class="project-media">
-          <img src="assets/federated.png" alt="Federated learning pipeline diagram" width="1280" height="720" loading="lazy" />
-        </figure>
-        <h3>Federated Pneumonia Detection (Chest X-rays)</h3>
+        <h3 class="title">
+          <img class="icon" src="assets/federated.png" alt="" />
+          Federated Pneumonia Detection (Chest X-rays)
+        </h3>
         <p>
           Privacy-preserving image classification simulating multiple hospital clients with a central server using
           <strong>Flower</strong>. Fine-tuned <strong>ResNet50</strong> and integrated <strong>Differential Privacy</strong> (tracked ε).
@@ -80,14 +69,9 @@
     <section id="skills">
       <h2>Skills</h2>
       <ul class="tags">
-        <!-- Languages -->
         <li>Python</li><li>HTML</li><li>CSS</li>
-
-        <!-- ML / AI -->
         <li>PyTorch</li><li>Transformers</li><li>OpenCV</li>
         <li>Librosa</li><li>Streamlit</li><li>W&amp;B</li>
-
-        <!-- Systems / Tools -->
         <li>Flower (FL)</li><li>Docker</li><li>Git/GitHub</li>
         <li>Linux</li><li>FFmpeg</li>
       </ul>
